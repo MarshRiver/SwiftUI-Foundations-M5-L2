@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		83CAF21D25F03C8D00EC180E /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CAF21C25F03C8D00EC180E /* LearningApp.swift */; };
-		83CAF21F25F03C8D00EC180E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CAF21E25F03C8D00EC180E /* HomeView.swift */; };
 		83CAF22125F03C8F00EC180E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CAF22025F03C8F00EC180E /* Assets.xcassets */; };
 		83CAF22425F03C8F00EC180E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CAF22325F03C8F00EC180E /* Preview Assets.xcassets */; };
 		83CAF23325F03D1600EC180E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CAF23225F03D1600EC180E /* ContentModel.swift */; };
+		F350C8002803025F00982A80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350C7FE2803025F00982A80 /* HomeView.swift */; };
+		F350C8012803025F00982A80 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350C7FF2803025F00982A80 /* HomeViewRow.swift */; };
 		F3C0C8E428025EC700D255B9 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = F3C0C8E228025EC700D255B9 /* style.html */; };
 		F3C0C8E528025EC700D255B9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F3C0C8E328025EC700D255B9 /* data.json */; };
 		F3C0C8E72802613C00D255B9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C0C8E62802613C00D255B9 /* Models.swift */; };
@@ -20,11 +21,12 @@
 /* Begin PBXFileReference section */
 		83CAF21925F03C8D00EC180E /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CAF21C25F03C8D00EC180E /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
-		83CAF21E25F03C8D00EC180E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		83CAF22025F03C8F00EC180E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CAF22325F03C8F00EC180E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83CAF22525F03C8F00EC180E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CAF23225F03D1600EC180E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		F350C7FE2803025F00982A80 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F350C7FF2803025F00982A80 /* HomeViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		F3C0C8E228025EC700D255B9 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		F3C0C8E328025EC700D255B9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		F3C0C8E62802613C00D255B9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -84,7 +86,8 @@
 		83CAF22D25F03CD900EC180E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				83CAF21E25F03C8D00EC180E /* HomeView.swift */,
+				F350C7FE2803025F00982A80 /* HomeView.swift */,
+				F350C7FF2803025F00982A80 /* HomeViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,9 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CAF21F25F03C8D00EC180E /* HomeView.swift in Sources */,
 				83CAF21D25F03C8D00EC180E /* LearningApp.swift in Sources */,
+				F350C8002803025F00982A80 /* HomeView.swift in Sources */,
 				83CAF23325F03D1600EC180E /* ContentModel.swift in Sources */,
+				F350C8012803025F00982A80 /* HomeViewRow.swift in Sources */,
 				F3C0C8E72802613C00D255B9 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
