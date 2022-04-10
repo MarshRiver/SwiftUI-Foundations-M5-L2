@@ -13,52 +13,30 @@ struct HomeView: View {
     
     var body: some View {
         
-        ScrollView{
-            LazyVStack{
-                ForEach(model.modules){
-                    module in
-                    
-                    ZStack{
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
-                            .padding()
-                        
-                        HStack{
-                            Spacer()
-                            Image("swift")
-                                .resizable()
-                                .frame(width: 116,height: 116)
-                                .clipShape(Circle())
-                            
-                            Spacer()
-                            
-                            
-                            //Text
-                            VStack(alignment: .leading,spacing: 10){
-                                
-                                Text("Learn Swift").bold()
-                                Text("some description").padding(.bottom,20)
-                                HStack{
-                                    Image(systemName: "text.book.closed")
-                                        .resizable()
-                                        .frame(width:15,height:15)
-                                    Text("10 Lessons").font(.caption)
-                                    Image(systemName: "clock")
-                                        .resizable()
-                                        .frame(width:15,height:15)
-                                    Text("2 Hrs")
-                                }
-                            }
-                            Spacer()
-                        }.padding(.horizontal,20
-                        )
+        NavigationView {
+            VStack (alignment: .leading){
+                Text("What do you want to do today?").padding(.leading,20)
+                ScrollView{
+                    LazyVStack{
+                        ForEach(model.modules){ module in
+                            //Learning Card
+                            HomeViewRow(image: module.content.image,
+                                        title: "Learn \(module.category)",
+                                        description: module.content.description,
+                                        count: "\(module.content.lessons.count) Lessons",
+                                        time: module.content.time)
+                            //Test Card
+                            HomeViewRow(image: module.test.image,
+                                        title: "Test \(module.category)",
+                                        description: module.test.description,
+                                        count: "\(module.test.questions.count) Questions",
+                                        time: module.test.time)
+
+                        }
                     }
+                    
                 }
-            }
-            
+            }.navigationTitle("Get Started")
         }
         
     }
