@@ -16,6 +16,7 @@
 		F3C0C8E428025EC700D255B9 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = F3C0C8E228025EC700D255B9 /* style.html */; };
 		F3C0C8E528025EC700D255B9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F3C0C8E328025EC700D255B9 /* data.json */; };
 		F3C0C8E72802613C00D255B9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C0C8E62802613C00D255B9 /* Models.swift */; };
+		F3C8A62E2803439500C3D4E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C8A62D2803439500C3D4E8 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3C0C8E228025EC700D255B9 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		F3C0C8E328025EC700D255B9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		F3C0C8E62802613C00D255B9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F3C8A62D2803439500C3D4E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				F350C7FE2803025F00982A80 /* HomeView.swift */,
 				F350C7FF2803025F00982A80 /* HomeViewRow.swift */,
+				F3C8A62D2803439500C3D4E8 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			files = (
 				83CAF21D25F03C8D00EC180E /* LearningApp.swift in Sources */,
 				F350C8002803025F00982A80 /* HomeView.swift in Sources */,
+				F3C8A62E2803439500C3D4E8 /* ContentView.swift in Sources */,
 				83CAF23325F03D1600EC180E /* ContentModel.swift in Sources */,
 				F350C8012803025F00982A80 /* HomeViewRow.swift in Sources */,
 				F3C0C8E72802613C00D255B9 /* Models.swift in Sources */,
