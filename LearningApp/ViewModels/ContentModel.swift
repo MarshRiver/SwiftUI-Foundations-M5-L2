@@ -12,6 +12,9 @@ class ContentModel: ObservableObject {
     @Published var modules = [Module]()
     //Current module
     @Published var currentModule: Module?
+    //Current lesson
+    @Published var currentLesson: Lesson?
+    var currentLessonIndex = 0
     
     var currentModuleIndex = 0
     var styleData: Data?
@@ -73,5 +76,17 @@ class ContentModel: ObservableObject {
         }
         //Set the current module
         currentModule = modules[currentModuleIndex]
+    }
+    
+    func beginLesson(_ lessonIndex:Int){
+        //CHeck that the lesson index is within range of module lessons
+        if lessonIndex < currentModule!.content.lessons.count{
+            currentLessonIndex = lessonIndex
+        }else{
+            currentLessonIndex = 0
+        }
+        
+        //Set current lesson
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
     }
 }
