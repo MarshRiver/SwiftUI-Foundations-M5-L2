@@ -17,22 +17,38 @@ struct ContentView: View {
                 
                 //Confirm that currentModule is set
                 if model.currentModule != nil{
-                    ForEach(model.currentModule!.content.lessons){lesson in
+                    ForEach(model.currentModule!.content.lessons) { lesson in
+                        
                         //lesson card
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .frame(width: 100, height: 100, alignment: .center)
+                        ZStack (alignment: .leading){
+                            //Background
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .frame(height: 66)
+                            HStack{
+                                Text(String(lesson.id+1))
+                                    .bold()
+                                    .padding()
+                                VStack(alignment: .leading){
+                                    Text(lesson.title).font(.title3)
+                                    Text(lesson.duration)
+                                }
+                            }
+                        }
+                        
                     }
                 }
-            }
+            }.padding().navigationTitle("Learn \(model.currentModule?.category ?? "")")
+            .padding()
+            .accentColor(.black)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView().environmentObject(ContentModel())
+//    }
+//}
